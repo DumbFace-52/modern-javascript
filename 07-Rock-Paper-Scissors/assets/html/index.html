@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Princess">
+    <meta name="description" content="Vanilla JavaScript Functions to Create a Rock Paper Scissors Game">
+    <title>Using Functions to Create a Rock Paper Scissors Game</title>
+    <!-- Link to Font Awesome Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Link to Favicon -->
+    <link rel="shortcut icon" href="../favicon/" type="image/x-icon">
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <!-- Link to External Script -->
+    <script src="../js/script.js"></script>
+</head>
+<body>
+    <!-- Body Content -->
+     <header>
+         <h1>Rock--Paper--Scissors</h1>
+     </header>
+
+     <main>
+        <!-- Main Content -->
+         <section id="btn--buttons">
+            <div class="btn--button--buttons">
+                <button  title="Rock" class="btn" id="rock" 
+                    onclick="
+                    playGame('rock');
+                ">
+                    <i class="fas fa-hand-rock"></i>
+                </button>
+
+                <button title="Paper"  class="btn" id="paper" 
+                    onclick="
+                    playGame('paper');               
+                ">
+                    <i class="fas fa-hand-paper"></i>
+                </button>
+
+                <button title="Scissors" class="btn" id="scissors" 
+                    onclick="
+                      playGame('scissors');         
+                ">
+                    <i class="fas fa-hand-scissors"></i>
+                </button>
+                <!-- Reset Button -->
+                <button class="btn" title="Reset" onclick="
+                    score.wins = 0;
+                    score.losses = 0;
+                    score.ties = 0;   
+                    localStorage.removeItem('score');                 
+                ">
+                    <i class="fas fa-redo-alt"></i>
+                </button>
+            </div>
+        </section>
+     </main>
+    
+</body>
+</html>
