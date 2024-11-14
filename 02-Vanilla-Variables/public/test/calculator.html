@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Future Princess">
+    <meta name="description" content="A simple calculator using JavaScript">
+    <title>Calculator</title>
+    <!-- Link to external CSS -->
+     <link rel="stylesheet" href="../../style/test.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Digital Calculator</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+    <!-- Calculator Buttons -->
+        <div class="btn--calculator_buttons">
+            <p>
+                <button onclick="calculation +='1'; console.log(calculation);">1</button>
+                <button onclick="calculation +='2'; console.log(calculation)">2</button>
+            </p>
+            <p>
+                <button onclick="calculation +='3'; console.log(calculation);">3</button>
+                <button onclick="calculation +='4'; console.log(calculation);">4</button>
+                <button onclick="calculation +='5'; console.log(calculation);">5</button>
+            </p>
+            <p>
+                <button onclick="calculation +='6'; console.log(calculation);">6</button>
+                <button onclick="calculation +='7'; console.log(calculation);">7</button>
+                <button onclick="calculation +='8'; console.log(calculation);">8</button>
+                <button onclick="calculation +='9'; console.log(calculation);">9</button>
+            </p>
+            <p>
+                <button onclick="calculation +='+'; console.log(calculation)">+</button>
+                <button onclick="calculation +='-'; console.log(calculation)">-</button>
+                <button onclick="calculation +='*'; console.log(calculation)">*</button>
+                <button onclick="calculation +='/'; console.log(calculation)">/</button>
+                <button onclick="calculation = ''; console.log(calculation); clear()">C</button>
+                <button onclick="calculation = eval(calculation); console.log(calculation);">=</button>
+            </p>
+        </div>
+         
+    </main>
+
+     <!-- Link to internal JavaScript -->
+    <script>
+        // Note: eval() takes a string and runs it as code.
+        // Avoid using eval() in real world projects since
+        // it can potentially be given harmful code to run.
+        // Only use eval() for learning purposes.
+        // Clear the calculation when the 'C' button is clicked.
+
+        let calculation = '';
+        console.log(calculation);
+    </script>
+</body>
+</html>

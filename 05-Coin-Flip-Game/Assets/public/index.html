@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=""author content="Princess">
+    <meta name="description" content="Using If-Statements and Boolean to create a coin flip game">
+    <title>Coin Flip Game</title>
+    <!-- Link to Favicon -->
+    <link rel="shortcut icon" href="../Favicon/" type="image/x-icon">
+    <!-- Link to Box Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="../Styles/app.css" type="text/css">
+    <!-- Link to External JS -->
+    <script src="../Script/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Coin Flip Game</h1>
+        <p>This game uses if-statements and boolean to simulate a coin flip.</p>
+    </header>
+    <main>
+        <!-- Code for the game -->
+        <div class="button--button">
+           <button onclick="
+                const randomNum = Math.random();
+                let theResult = randomNum < 0.5 ? 'Heads' : 'Tails';
+
+                const canYouGuess = 'Heads'; // Change this to your guess
+
+                if (canYouGuess === theResult) {
+                    alert(`You guessed ${canYouGuess} and the result is ${theResult}. You Win!`);
+                } else {
+                    alert(`You guessed ${canYouGuess} but the result is ${theResult}. You Lose!`);
+                }
+            ">
+                <i class="bx bx-coin"></i>
+           </button>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* || Importing Google Fonts */
+
+
+/* || Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || Variables */
+:root {
+    --background-color: antiquewhite;
+    --font-family: 'Poppins', sans-serif;
+}
+
+/* || Global Styles */
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+}

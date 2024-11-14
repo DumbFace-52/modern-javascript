@@ -1,0 +1,47 @@
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || GENERAL CSS */
+body {
+    background-color: dimgray;
+    color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body header h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.btn--calculator_buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn--calculator_buttons button {
+    background-color: whitesmoke;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .5s ease-in-out;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px 0 rgba(5, 5, 5, 0.836), 0 6px 20px 0 rgba(211, 209, 209, 0.048);
+    border-radius: 8px;
+}
+
+.btn--calculator_buttons button:hover {
+    background-color: aliceblue;
+    color: #000;
+    transition: all .5s ease-in-out;
+    transform: scale(1.2);
+}

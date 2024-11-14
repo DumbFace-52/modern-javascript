@@ -1,0 +1,99 @@
+/* || IMPORT GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caprasimo&family=Grenze+Gotisch:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Knewave&family=Markazi+Text:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Patrick+Hand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Tillana:wght@400;500;600;700;800&display=swap');
+
+
+/* || RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* || UTILITIES */
+
+/* || VARIABLES */
+:root {
+    /* FONT */
+    --FF: "Sour Gummy", sans-serif;
+    --FW: 600;
+    --FS: 1.5rem;
+
+    /* BACKGROUND */
+    --BGC: #F5F5F5;
+    --BG: linear-gradient(to right, blue 0%, royalblue 50%, dodgerblue 100%);
+
+    /* COLORS */
+    --TEXT: #fff;
+    --BG-LINK: dodgerblue;
+
+    /* TRANSITIONS */
+    --BOX-SHADOW: 0 0 10px rgb(0, 0, 128, .5) ;
+    --BOX-HOVER: darkblue;
+
+}
+
+/* || Darkmode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* FONT */
+    --FF: "Sour Gummy", sans-serif;
+    --FW: 600;
+    --FS: 1.5rem;
+
+    /* BACKGROUND */
+    --BGC: #F5F5F5;
+    --BG: linear-gradient(to right, #000 0%, dimgray 100%, floralwhite 50%);
+
+    /* COLORS */
+    --TEXT: #fff;
+    --BG-LINK: black;
+
+    /* TRANSITIONS */
+    --BOX-SHADOW: 0 0 10px rgba(254, 254, 255, 0.5);
+    --BOX-HOVER: dimgray;
+    }
+}
+
+
+/* || GLOBAL STYLES */
+body {
+    font-family: var(--FF);
+    font-weight: var(--FW);
+    font-size: var(--FS);
+    background: var(--BG);
+    color: var(--TEXT);
+    padding: 2rem;
+}
+
+body header h1, p {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+#btn--buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 5rem;    
+    
+}
+
+#btn--buttons .btn--button--buttons button {
+    font-size: 5rem;
+    background: var(--BG-LINK);
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 50%;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    color: var(--TEXT);
+    box-shadow: var(--BOX-SHADOW) ;
+    border: none;
+}
+
+#btn--buttons .btn--button--buttons button:hover {
+    background: var(--BOX-HOVER);
+    transform: scale(1.1);
+}
+
